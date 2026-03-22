@@ -3,12 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Portfólio de Mariane Martins — Analista de Dados | SQL | Power BI | Excel | Azure" />
+  <meta
+    name="description"
+    content="Portfólio de Mariane Martins — Analista de Suporte | Análise de Sistemas em formação | QA em desenvolvimento"
+  />
   <title>Mariane Martins | Portfólio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -25,11 +31,12 @@
           <span></span><span></span><span></span>
           <span class="sr-only">Abrir menu</span>
         </button>
+
         <ul class="nav__menu" id="navMenu">
-          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -37,14 +44,23 @@
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="badge">Analista de Dados • Analista de Suporte • SQL • Power BI • Excel</p>
-          <h1>Transformo dados em decisões com análises claras e dashboards objetivos.</h1>
+          <p class="badge">Analista de Suporte • Analista de Sistemas em formação • QA em desenvolvimento</p>
+
+          <h1>
+            Atuo com suporte técnico, análise de incidentes e documentação,
+            com foco em evoluir para Análise de Sistemas e QA.
+          </h1>
+
           <p class="lead">
-            Experiência em suporte técnico N1/N2, resolução de incidentes, documentação e melhoria contínua.
-            Em transição para Dados, aplicando SQL, Power BI e Excel para gerar insights.
+            Experiência com suporte N1/N2, troubleshooting, GLPI, Windows, Linux,
+            atendimento ao cliente e acompanhamento de chamados.
+            Também venho desenvolvendo habilidades em SQL, UML, testes de software
+            e análise de sistemas para atuar de forma cada vez mais analítica
+            e orientada à qualidade.
           </p>
 
           <div class="hero__cta">
@@ -66,151 +82,83 @@
         <aside class="hero__card" aria-label="Resumo rápido">
           <div class="profile">
             <div class="profile__avatar">
-             <img src="assets/img/mariane-martins.jpg" 
+              <img
+                src="assets/img/mariane-martins.jpg"
                 alt="Mariane Martins"
-                style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+                style="width:100%; height:100%; object-fit:cover; border-radius:16px;"
+              >
             </div>
+
             <div>
               <p class="profile__name">Mariane Martins</p>
-              <p class="profile__meta">Piraquara - PR • Presencial/ Remoto / Híbrido</p>
+              <p class="profile__meta">Piraquara - PR • Presencial / Remoto / Híbrido</p>
             </div>
           </div>
 
           <div class="quick">
             <div class="quick__item">
               <p class="quick__label">Foco</p>
-              <p class="quick__value">Análise de Dados</p>
+              <p class="quick__value">Suporte • Análise de Sistemas • QA</p>
             </div>
+
             <div class="quick__item">
               <p class="quick__label">Stack</p>
-              <p class="quick__value">SQL • Power BI • Excel • Azure (Fund.)</p>
+              <p class="quick__value">GLPI • Linux • Windows • SQL • Troubleshooting • Documentação</p>
             </div>
+
             <div class="quick__item">
               <p class="quick__label">Contato</p>
-              <p class="quick__value"><a href="mailto:mariane.martins.ctt@gmail.com">mariane.martins.ctt@gmail.com</a></p>
+              <p class="quick__value">
+                <a href="mailto:mariane.martins.ctt@gmail.com">mariane.martins.ctt@gmail.com</a>
+              </p>
             </div>
           </div>
 
           <div class="divider"></div>
 
           <p class="small muted">
-            Este portfólio foi feito para destacar projetos, skills e resultados.
+            Portfólio voltado para vagas de suporte técnico, análise de sistemas e QA,
+            destacando experiência prática, projetos e evolução profissional.
           </p>
         </aside>
       </div>
     </section>
 
-    <section class="section" id="projetos">
-      <div class="container">
-        <div class="section__head">
-          <h2>Projetos</h2>
-          <p class="muted">Clique para ver detalhes, arquivos e prints.</p>
-        </div>
-
-        <div class="filters" aria-label="Filtros de projetos">
-          <button class="chip is-active" data-filter="all">Todos</button>
-          <button class="chip" data-filter="powerbi">Power BI</button>
-          <button class="chip" data-filter="sql">SQL</button>
-          <button class="chip" data-filter="excel">Excel</button>
-          <button class="chip" data-filter="python">Python</button>
-          <button class="chip" data-filter="azure">Azure</button>
-        </div>
-
-        <div class="grid" id="projectsGrid">
-
-          <article class="card project" data-tags="powerbi,sql">
-        <div class="card__media">
-             <img src="assets/img/project-vendas.png" 
-                 alt="Dashboard Analítico de Vendas Globais"
-                 style="width:100%; height:100%; object-fit:cover;">
-            </div>
-            <div class="card__body">
-              <h3>Dashboard Analítico de Vendas Globais</h3>
-              <p class="muted">
-                Análise de vendas por categoria, subcategoria e país, com filtros por ano/segmento e visão geográfica.
-              </p>
-
-              <ul class="bullets">
-                <li>KPIs: total de vendas, distribuição por categoria</li>
-                <li>Visualizações: barras, mapa, segmentações</li>
-                <li>Modelagem e medidas básicas em DAX</li>
-              </ul>
-
-              <div class="tags">
-                <span class="tag">Power BI</span>
-                <span class="tag">SQL</span>
-                <span class="tag">DAX</span>
-              </div>
-
-              <div class="card__actions">
-                <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noreferrer">Ver no GitHub</a>
-                <a class="btn btn--small btn--ghost" href="https://app.powerbi.com/reportEmbed?reportId=d3eb5df9-6c3f-4b0c-95c1-44cbac130bfb&autoAuth=true&ctid=659ce2b8-0714-4198-8c38-dc9b60aabb57" target="_blank" rel="noreferrer">Ver online</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- duplicar: card para novos projetos -->
-<article class="card project" data-tags="sql">
-<div class="card__media">
-  <img src="assets/img/project-sql.png" 
-       alt="Análise SQL - Faturamento por Marca"
-       style="width:100%; height:100%; object-fit:cover;">
-</div>
-
-  <div class="card__body">
-    <h3>Sistema Analítico de Concessionária</h3>
-
-    <p class="muted">
-      Modelagem relacional e análise de vendas utilizando MySQL, com foco em faturamento,
-      ticket médio, performance por marca e comportamento de clientes.
-    </p>
-
-    <ul class="bullets">
-      <li>Modelagem com chaves primárias e estrangeiras</li>
-      <li>Consultas com JOIN, GROUP BY e subqueries</li>
-      <li>Criação de View para relatório consolidado</li>
-      <li>Stored Procedure parametrizada</li>
-    </ul>
-
-    <div class="tags">
-      <span class="tag">SQL</span>
-      <span class="tag">MySQL</span>
-      <span class="tag">Modelagem</span>
-    </div>
-
-    <div class="card__actions">
-      <a class="btn btn--small btn--primary" 
-         href="https://github.com/mariemartins03/sql-analise-concessionaria" 
-         target="_blank" rel="noreferrer">
-         Ver no GitHub
-      </a>
-    </div>
-  </div>
-</article>
-
-        </div>
-      </div>
-    </section>
-
+    <!-- SOBRE -->
     <section class="section section--alt" id="sobre">
       <div class="container two-col">
         <div>
           <h2>Sobre</h2>
+
           <p>
-            Sou <strong>Analista de Suporte</strong> com experiência em ambientes Linux e processos de ITSM,
-            atuando com registro e acompanhamento de incidentes via GLPI, troubleshooting e documentação.
-            Estou migrando para <strong>Análise de Dados</strong>, aplicando SQL, Power BI e Excel para apoiar
-            tomada de decisão e eficiência dos serviços.
+            Sou profissional da área de tecnologia com experiência em suporte técnico,
+            atendimento ao cliente, troubleshooting, documentação e acompanhamento de incidentes.
+            Atuo com ambientes Windows e Linux, registro e gestão de chamados via GLPI,
+            além de suporte a sistemas, redes e servidores.
+          </p>
+
+          <p>
+            Tenho perfil analítico, organizado e colaborativo, com interesse em evoluir
+            para áreas mais próximas de Análise de Sistemas e QA.
+            Por isso, venho aprofundando meus conhecimentos em SQL, modelagem,
+            UML, testes de software e melhoria contínua de processos.
           </p>
 
           <div class="highlights">
             <div class="highlight">
               <p class="highlight__title">O que eu entrego</p>
-              <p class="muted">Dashboards, análises, organização de dados e documentação clara.</p>
+              <p class="muted">
+                Suporte técnico, análise inicial de incidentes, documentação clara,
+                escalonamento com contexto e acompanhamento de demandas.
+              </p>
             </div>
+
             <div class="highlight">
               <p class="highlight__title">Como eu trabalho</p>
-              <p class="muted">Foco em rastreabilidade, melhoria contínua e comunicação objetiva.</p>
+              <p class="muted">
+                Com organização, rastreabilidade, comunicação objetiva,
+                foco no cliente e melhoria contínua.
+              </p>
             </div>
           </div>
         </div>
@@ -219,57 +167,28 @@
           <h3>Resumo</h3>
           <ul class="info">
             <li><span>Local:</span> Piraquara - PR</li>
-            <li><span>Objetivo:</span> Analista de Dados</li>
+            <li><span>Objetivo:</span> Suporte • Análise de Sistemas • QA</li>
             <li><span>Contato:</span> <a href="mailto:mariane.martins.ctt@gmail.com">mariane.martins.ctt@gmail.com</a></li>
             <li><span>GitHub:</span> <a href="https://github.com/mariemartins03" target="_blank" rel="noreferrer">mariemartins03</a></li>
+            <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/mariane-martins-948b1222b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">Mariane Martins</a></li>
           </ul>
 
           <div class="divider"></div>
+
+          <p class="small muted">
+            Interesse em atuar de forma sólida em suporte técnico,
+            com evolução natural para análise de sistemas e qualidade de software.
+          </p>
         </aside>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section__head">
-          <h2>Skills</h2>
-          <p class="muted">Principais habilidades técnicas e ferramentas.</p>
-        </div>
-
-        <div class="skills">
-          <div class="skill">
-            <p class="skill__name">SQL</p>
-            <p class="muted">SELECT, JOIN, GROUP BY, subqueries, views, procedures</p>
-          </div>
-          <div class="skill">
-            <p class="skill__name">Power BI</p>
-            <p class="muted">Dashboards interativos, DAX básico, modelagem</p>
-          </div>
-          <div class="skill">
-            <p class="skill__name">Excel</p>
-            <p class="muted">PROCV/XLOOKUP, Tabela Dinâmica, SOMASES, CONT.SES, gráficos</p>
-          </div>
-          <div class="skill">
-            <p class="skill__name">Bancos</p>
-            <p class="muted">Noções de PostgreSQL / MySQL, modelagem relacional</p>
-          </div>
-          <div class="skill">
-            <p class="skill__name">Cloud</p>
-            <p class="muted">Microsoft Azure (conceitos IaaS, PaaS, SaaS)</p>
-          </div>
-          <div class="skill">
-            <p class="skill__name">Infra / ITSM</p>
-            <p class="muted">Windows & Linux, GLPI, Active Directory</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experiência -->
-    <section class="section section--alt" id="experiencia">
+    <!-- EXPERIÊNCIA -->
+    <section class="section" id="experiencia">
       <div class="container">
         <div class="section__head">
           <h2>Experiência</h2>
+          <p class="muted">Vivência prática com suporte, atendimento, troubleshooting e documentação.</p>
         </div>
 
         <div class="timeline">
@@ -279,10 +198,12 @@
               <h3>Helper Tecnologia — Analista de Suporte Pleno</h3>
               <p class="muted">set/2024 — atual</p>
               <ul class="bullets">
-                <li>Suporte em Linux para sistemas de gravação/monitoramento de câmeras.</li>
-                <li>Análise e resolução de incidentes, garantindo estabilidade.</li>
-                <li>Registro e acompanhamento de incidentes via GLPI, com foco em melhoria contínua.</li>
-                <li>Montagem, manutenção e suporte a servidores.</li>
+                <li>Suporte técnico a ambientes Linux e sistemas de monitoramento e gravação.</li>
+                <li>Diagnóstico e tratamento de incidentes, buscando estabilidade e continuidade do serviço.</li>
+                <li>Registro, acompanhamento e atualização de chamados via GLPI.</li>
+                <li>Escalonamento técnico com documentação de testes, evidências e contexto do problema.</li>
+                <li>Apoio à manutenção de servidores e infraestrutura.</li>
+                <li>Atuação com foco em troubleshooting, organização e melhoria contínua.</li>
               </ul>
             </div>
           </div>
@@ -290,13 +211,15 @@
           <div class="timeline__item">
             <div class="timeline__dot"></div>
             <div class="timeline__content">
-              <h3>Quality Digital — Suporte Técnico N1/N2</h3>
+              <h3>Quality Digital — Técnico de Suporte N1/N2</h3>
               <p class="muted">dez/2023 — set/2024</p>
               <ul class="bullets">
-                <li>Atendimento multicanal e acesso remoto.</li>
-                <li>Diagnóstico de sistemas, softwares, impressoras e redes.</li>
-                <li>Registro e acompanhamento de chamados com escalonamento.</li>
-                <li>Validação de correções após atendimento.</li>
+                <li>Atendimento multicanal a usuários e clientes.</li>
+                <li>Suporte remoto para sistemas, softwares, impressoras e conectividade.</li>
+                <li>Triagem, registro e acompanhamento de chamados.</li>
+                <li>Escalonamento de incidentes com contexto técnico adequado.</li>
+                <li>Validação de correções e retorno ao usuário.</li>
+                <li>Apoio à experiência do cliente com comunicação clara e acompanhamento de status.</li>
               </ul>
             </div>
           </div>
@@ -307,15 +230,21 @@
         <div class="two-col">
           <div>
             <h3>Formação</h3>
-            <p><strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong> — Anhanguera (em andamento, 5º semestre)</p>
+            <p>
+              <strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong> —
+              Anhanguera (em andamento, 5º semestre)
+            </p>
             <p class="muted">Ensino Médio completo (2020)</p>
           </div>
+
           <div>
             <h3>Cursos</h3>
             <ul class="bullets">
-              <li>Preparatório AZ-900 (Udemy)</li>
-              <li>Banco de Dados SQL do Zero ao Avançado (Udemy)</li>
-              <li>Power BI (Cubos Academy)</li>
+              <li>Testes Automáticos + Curso Completo de Teste de Software — Concluído</li>
+              <li>UML — Guia Básico para Análise e Projeto de Sistemas — Concluído</li>
+              <li>Banco de Dados SQL do Zero ao Avançado</li>
+              <li>Preparatório AZ-900</li>
+              <li>Power BI — Cubos Academy</li>
               <li>Analista de Suporte I e II / Manutenção de Computadores</li>
             </ul>
           </div>
@@ -323,13 +252,230 @@
       </div>
     </section>
 
-    <!-- Contato -->
-    <section class="section" id="contato">
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p class="muted">Habilidades técnicas organizadas pelas áreas em que quero atuar.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill">
+            <p class="skill__name">Suporte e Troubleshooting</p>
+            <p class="muted">Atendimento N1/N2, diagnóstico de incidentes, triagem, escalonamento e acompanhamento de chamados.</p>
+          </div>
+
+          <div class="skill">
+            <p class="skill__name">Infraestrutura / ITSM</p>
+            <p class="muted">Windows, Linux, GLPI, Active Directory, redes básicas, suporte a servidores e organização de demandas.</p>
+          </div>
+
+          <div class="skill">
+            <p class="skill__name">SQL e Banco de Dados</p>
+            <p class="muted">SELECT, JOIN, GROUP BY, subqueries, views, procedures, MySQL e noções de PostgreSQL.</p>
+          </div>
+
+          <div class="skill">
+            <p class="skill__name">Análise de Sistemas</p>
+            <p class="muted">UML, modelagem relacional, análise de problemas, documentação técnica e visão de processos.</p>
+          </div>
+
+          <div class="skill">
+            <p class="skill__name">QA / Qualidade</p>
+            <p class="muted">Testes de software, validação funcional, registro de evidências, atenção a detalhes e apoio à melhoria contínua.</p>
+          </div>
+
+          <div class="skill">
+            <p class="skill__name">Ferramentas Complementares</p>
+            <p class="muted">Excel, Power BI e noções de Microsoft Azure para ampliar a visão analítica e técnica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projetos</h2>
+          <p class="muted">Projetos e estudos práticos mais alinhados com suporte, sistemas e qualidade.</p>
+        </div>
+
+        <div class="filters" aria-label="Filtros de projetos">
+          <button class="chip is-active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="suporte">Suporte</button>
+          <button class="chip" data-filter="sql">SQL</button>
+          <button class="chip" data-filter="sistemas">Análise de Sistemas</button>
+          <button class="chip" data-filter="qa">QA</button>
+          <button class="chip" data-filter="documentacao">Documentação</button>
+        </div>
+
+        <div class="grid" id="projectsGrid">
+          <article class="card project" data-tags="suporte,documentacao">
+            <div class="card__media">
+              <img
+                src="assets/img/project-suporte.png"
+                alt="Fluxo de Atendimento e Troubleshooting em Suporte Técnico"
+                style="width:100%; height:100%; object-fit:cover;"
+              >
+            </div>
+
+            <div class="card__body">
+              <h3>Fluxo de Atendimento e Troubleshooting em Suporte Técnico</h3>
+              <p class="muted">
+                Estruturação de fluxo de atendimento para incidentes técnicos,
+                com triagem, análise inicial, registro, validação, escalonamento
+                e acompanhamento até resolução.
+              </p>
+
+              <ul class="bullets">
+                <li>Organização do processo de atendimento</li>
+                <li>Registro técnico e rastreabilidade</li>
+                <li>Escalonamento com contexto e evidências</li>
+                <li>Comunicação clara com usuário e equipes</li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">Suporte</span>
+                <span class="tag">Troubleshooting</span>
+                <span class="tag">Documentação</span>
+                <span class="tag">GLPI</span>
+              </div>
+
+              <div class="card__actions">
+                <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noreferrer">Ver detalhes</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="sql,sistemas">
+            <div class="card__media">
+              <img
+                src="assets/img/project-sql.png"
+                alt="Sistema Analítico de Concessionária"
+                style="width:100%; height:100%; object-fit:cover;"
+              >
+            </div>
+
+            <div class="card__body">
+              <h3>Sistema Analítico de Concessionária</h3>
+              <p class="muted">
+                Modelagem relacional e análise de vendas utilizando MySQL,
+                com foco em faturamento, ticket médio, performance por marca
+                e comportamento de clientes.
+              </p>
+
+              <ul class="bullets">
+                <li>Modelagem com chaves primárias e estrangeiras</li>
+                <li>Consultas com JOIN, GROUP BY e subqueries</li>
+                <li>Criação de VIEW para relatório consolidado</li>
+                <li>Stored Procedure parametrizada</li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">SQL</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Modelagem</span>
+                <span class="tag">Análise</span>
+              </div>
+
+              <div class="card__actions">
+                <a
+                  class="btn btn--small btn--primary"
+                  href="https://github.com/mariemartins03/sql-analise-concessionaria"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver no GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="sistemas,documentacao">
+            <div class="card__media">
+              <img
+                src="assets/img/project-uml.png"
+                alt="Modelagem UML para Análise de Sistema"
+                style="width:100%; height:100%; object-fit:cover;"
+              >
+            </div>
+
+            <div class="card__body">
+              <h3>Modelagem UML para Análise de Sistema</h3>
+              <p class="muted">
+                Estudo prático com diagramas UML para representar fluxo,
+                atores, funcionalidades e estrutura de um sistema,
+                apoiando entendimento de requisitos e comunicação entre áreas.
+              </p>
+
+              <ul class="bullets">
+                <li>Visão de casos de uso e fluxos</li>
+                <li>Melhor compreensão de requisitos</li>
+                <li>Apoio à documentação funcional</li>
+                <li>Base para evolução em análise de sistemas</li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">UML</span>
+                <span class="tag">Análise de Sistemas</span>
+                <span class="tag">Documentação</span>
+              </div>
+
+              <div class="card__actions">
+                <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noreferrer">Ver detalhes</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="qa,documentacao">
+            <div class="card__media">
+              <img
+                src="assets/img/project-qa.png"
+                alt="Casos de Teste e Validação Funcional"
+                style="width:100%; height:100%; object-fit:cover;"
+              >
+            </div>
+
+            <div class="card__body">
+              <h3>Casos de Teste e Validação Funcional</h3>
+              <p class="muted">
+                Estruturação de cenários e casos de teste para validação de funcionalidades,
+                identificação de falhas, registro de evidências e apoio à qualidade do sistema.
+              </p>
+
+              <ul class="bullets">
+                <li>Criação de cenários de teste</li>
+                <li>Validação de comportamento esperado</li>
+                <li>Registro de falhas e evidências</li>
+                <li>Foco em qualidade e atenção a detalhes</li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">QA</span>
+                <span class="tag">Teste Funcional</span>
+                <span class="tag">Validação</span>
+                <span class="tag">Qualidade</span>
+              </div>
+
+              <div class="card__actions">
+                <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noreferrer">Ver detalhes</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section section--alt" id="contato">
       <div class="container two-col">
         <div>
           <h2>Contato</h2>
           <p class="muted">
-            Quer falar sobre uma vaga Jr, estágio ou projeto? Me chame por e-mail ou LinkedIn.
+            Aberta a oportunidades nas áreas de suporte técnico,
+            análise de sistemas e QA.
           </p>
 
           <div class="contact">
@@ -343,12 +489,22 @@
               <span class="contact__value">(41) 99142-7664</span>
             </a>
 
-            <a class="contact__item" href="https://www.linkedin.com/in/mariane-martins-948b1222b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">
+            <a
+              class="contact__item"
+              href="https://www.linkedin.com/in/mariane-martins-948b1222b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span class="contact__label">LinkedIn</span>
               <span class="contact__value">Mariane Martins</span>
             </a>
 
-            <a class="contact__item" href="https://github.com/mariemartins03" target="_blank" rel="noreferrer">
+            <a
+              class="contact__item"
+              href="https://github.com/mariemartins03"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span class="contact__label">GitHub</span>
               <span class="contact__value">mariemartins03</span>
             </a>
