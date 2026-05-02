@@ -232,9 +232,9 @@
             <h3>Formação</h3>
             <p>
               <strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong> —
-              Anhanguera (em andamento, 5º semestre)
+              Anhanguera em andamento, 5º semestre
             </p>
-            <p class="muted">Ensino Médio completo (2020)</p>
+            <p class="muted">Ensino Médio completo 2020</p>
           </div>
 
           <div>
@@ -309,9 +309,73 @@
           <button class="chip" data-filter="sistemas">Análise de Sistemas</button>
           <button class="chip" data-filter="qa">QA</button>
           <button class="chip" data-filter="documentacao">Documentação</button>
+          <button class="chip" data-filter="python">Python</button>
         </div>
 
         <div class="grid" id="projectsGrid">
+
+          <!-- PROJETO PRINCIPAL -->
+          <article class="card project project--featured card--light" data-tags="sistemas,qa,documentacao,python">
+            <div class="card__media">
+              <img
+                src="assets/img/project-doacoes.png"
+                alt="Sistema de Controle de Doações"
+                style="width:100%; height:100%; object-fit:cover;"
+              >
+            </div>
+
+            <div class="card__body">
+              <p class="project__label">Projeto principal</p>
+
+              <h3>Sistema de Controle de Doações</h3>
+
+              <p class="muted">
+                Sistema web desenvolvido em Python/Flask para controle de doações,
+                com autenticação, cadastro de registros, banco de dados SQLite,
+                documentação funcional, plano de testes e testes automatizados.
+              </p>
+
+              <ul class="bullets">
+                <li>Login administrativo com variáveis de ambiente</li>
+                <li>Cadastro e controle de doações</li>
+                <li>Banco de dados SQLite</li>
+                <li>Plano de testes funcional documentado</li>
+                <li>Testes automatizados com Pytest</li>
+                <li>Pipeline com GitHub Actions</li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">QA</span>
+                <span class="tag">Pytest</span>
+                <span class="tag">Documentação</span>
+              </div>
+
+              <div class="card__actions">
+                <a
+                  class="btn btn--small btn--primary"
+                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver no GitHub
+                </a>
+
+                <a
+                  class="btn btn--small btn--ghost btn--dark"
+                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio/tree/main/docs"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver documentação
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SUPORTE -->
           <article class="card project" data-tags="suporte,documentacao">
             <div class="card__media">
               <img
@@ -344,11 +408,14 @@
               </div>
 
               <div class="card__actions">
-                <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noreferrer">Ver detalhes</a>
+                <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noreferrer">
+                  Ver detalhes
+                </a>
               </div>
             </div>
           </article>
 
+          <!-- SQL -->
           <article class="card project" data-tags="sql,sistemas">
             <div class="card__media">
               <img
@@ -393,77 +460,110 @@
             </div>
           </article>
 
-          <article class="card project" data-tags="sistemas,documentacao">
+          <!-- UML DO SISTEMA DE DOAÇÕES -->
+          <article class="card project" data-tags="sistemas,documentacao,qa">
             <div class="card__media">
               <img
                 src="assets/img/project-uml.png"
-                alt="Modelagem UML para Análise de Sistema"
+                alt="Diagramas UML do Sistema de Controle de Doações"
                 style="width:100%; height:100%; object-fit:cover;"
               >
             </div>
 
             <div class="card__body">
-              <h3>Modelagem UML para Análise de Sistema</h3>
+              <h3>Diagramas UML do Sistema de Doações</h3>
+
               <p class="muted">
-                Estudo prático com diagramas UML para representar fluxo,
-                atores, funcionalidades e estrutura de um sistema,
-                apoiando entendimento de requisitos e comunicação entre áreas.
+                Documentação visual criada para o Sistema de Controle de Doações,
+                representando fluxos, atores, funcionalidades e estrutura do sistema.
+                Os diagramas apoiam a análise de requisitos, a comunicação técnica
+                e a validação das regras de negócio.
               </p>
 
               <ul class="bullets">
-                <li>Visão de casos de uso e fluxos</li>
-                <li>Melhor compreensão de requisitos</li>
-                <li>Apoio à documentação funcional</li>
-                <li>Base para evolução em análise de sistemas</li>
+                <li>Diagrama de casos de uso</li>
+                <li>Representação de atores e funcionalidades</li>
+                <li>Apoio à análise de requisitos</li>
+                <li>Documentação complementar do projeto principal</li>
               </ul>
 
               <div class="tags">
                 <span class="tag">UML</span>
                 <span class="tag">Análise de Sistemas</span>
                 <span class="tag">Documentação</span>
+                <span class="tag">Requisitos</span>
               </div>
 
               <div class="card__actions">
-                <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noreferrer">Ver detalhes</a>
+                <a
+                  class="btn btn--small btn--primary"
+                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio/tree/main/Diagramas"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver diagramas
+                </a>
               </div>
             </div>
           </article>
 
-          <article class="card project" data-tags="qa,documentacao">
+          <!-- CASOS DE TESTE DO SISTEMA DE DOAÇÕES -->
+          <article class="card project" data-tags="qa,documentacao,sistemas,python">
             <div class="card__media">
               <img
                 src="assets/img/project-qa.png"
-                alt="Casos de Teste e Validação Funcional"
+                alt="Casos de Teste do Sistema de Controle de Doações"
                 style="width:100%; height:100%; object-fit:cover;"
               >
             </div>
 
             <div class="card__body">
-              <h3>Casos de Teste e Validação Funcional</h3>
+              <h3>Casos de Teste e Validação Funcional do Sistema de Doações</h3>
+
               <p class="muted">
-                Estruturação de cenários e casos de teste para validação de funcionalidades,
-                identificação de falhas, registro de evidências e apoio à qualidade do sistema.
+                Planejamento e validação funcional do Sistema de Controle de Doações,
+                com foco em cenários de login, navegação, cadastro, regras de negócio,
+                comportamento esperado e registro de evidências.
               </p>
 
               <ul class="bullets">
-                <li>Criação de cenários de teste</li>
-                <li>Validação de comportamento esperado</li>
-                <li>Registro de falhas e evidências</li>
-                <li>Foco em qualidade e atenção a detalhes</li>
+                <li>Plano de testes funcional documentado</li>
+                <li>Cenários de login e autenticação</li>
+                <li>Validação do fluxo de cadastro de doações</li>
+                <li>Testes automatizados com Pytest</li>
+                <li>Pipeline de validação com GitHub Actions</li>
               </ul>
 
               <div class="tags">
                 <span class="tag">QA</span>
                 <span class="tag">Teste Funcional</span>
-                <span class="tag">Validação</span>
-                <span class="tag">Qualidade</span>
+                <span class="tag">Pytest</span>
+                <span class="tag">GitHub Actions</span>
+                <span class="tag">Evidências</span>
               </div>
 
               <div class="card__actions">
-                <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noreferrer">Ver detalhes</a>
+                <a
+                  class="btn btn--small btn--primary"
+                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio/tree/main/docs"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver plano de testes
+                </a>
+
+                <a
+                  class="btn btn--small btn--ghost"
+                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio/tree/main/tests"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver testes
+                </a>
               </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
