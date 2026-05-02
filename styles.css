@@ -310,8 +310,15 @@ h1{
 .card__body h3{
   margin: 0 0 8px;
   font-size: 18px;
-  color: #000; /* título preto */
+  color: var(--text);
 }
+
+.project__label{
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .bullets{
   margin: 12px 0 0;
   padding-left: 16px;
@@ -486,23 +493,4 @@ h1{
   }
   .nav__menu.is-open{ display:flex; }
   .nav__menu a{ display:block; }
-}
-
-.card--light {
-  background: #ffffff;
-  color: #111;
-}
-
-.card--light .muted {
-  color: #444;
-}
-
-.card--light .bullets {
-  color: #333;
-}
-
-.card--light .tag {
-  background: #f1f1f1;
-  border: 1px solid #ddd;
-  color: #333;
 }
