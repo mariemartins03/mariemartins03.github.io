@@ -1,8 +1,6 @@
 [README.md](https://github.com/user-attachments/files/30198816/README.md)
 <div align="center">
 
-<img src="./assets/avatar.png" width="180" style="border-radius:50%;" alt="Mariane Martins" />
-
 </div>
 
 <h1 align="center">👋 Olá, eu sou a Mariane Martins</h1>
