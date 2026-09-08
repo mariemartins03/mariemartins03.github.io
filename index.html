@@ -1,620 +1,412 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta
-    name="description"
-    content="Portfólio de Mariane Martins — Analista de Suporte | Análise de Sistemas em formação | QA em desenvolvimento"
-  />
-  <title>Mariane Martins | Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariane Martins | Analista de Sistemas & QA</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/app.js"></script>
 </head>
 
 <body>
-  <header class="topbar" id="top">
-    <div class="container topbar__inner">
-      <a class="brand" href="#top" aria-label="Voltar ao topo">
-        <span class="brand__dot"></span>
-        <span class="brand__name">Mariane Martins</span>
-      </a>
 
-      <nav class="nav" aria-label="Navegação principal">
-        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-          <span></span><span></span><span></span>
-          <span class="sr-only">Abrir menu</span>
-        </button>
+  <!-- ================= NAVBAR ================= -->
 
-        <ul class="nav__menu" id="navMenu">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+  <header class="hero">
+
+    <nav class="navbar">
+      <h2>MM</h2>
+
+      <ul>
+        <li><a href="#trajetoria">Trajetória</a></li>
+        <li><a href="#skills">Competências</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <div class="hero-content">
+
+      <div class="pixel-hero">
+        <img src="assets/pixel/computer.svg" alt="Computador Pixel Art" class="main-pixel">
+      </div>
+
+      <div class="hero-text">
+
+        <div class="terminal">
+
+          <div class="terminal-header">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+
+          <p>> system.start()</p>
+          <p class="typing">Loading profile...</p>
+
+        </div>
+
+        <span class="status">● SYSTEM ONLINE</span>
+
+        <h1>Mariane Martins</h1>
+
+        <h2>Analista de Sistemas • QA • Sustentação</h2>
+
+        <p>
+          Profissional de tecnologia com experiência prática em sustentação,
+          investigação de incidentes, análise de logs e validação de sistemas
+          em produção. Atualmente aprofundando conhecimentos em Análise de
+          Sistemas e Qualidade de Software.
+        </p>
+
+        <div class="buttons">
+          <a href="#projetos" class="btn primary">Ver Projetos</a>
+          <a href="https://github.com/mariemartins03" target="_blank" class="btn">GitHub</a>
+          <a href="#" class="btn">LinkedIn</a>
+        </div>
+
+      </div>
+
     </div>
+
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="badge">Analista de TI • Sustentação de Sistemas • Análise de Sistemas • QA</p>
+  <!-- ================= TRAJETÓRIA ================= -->
 
-          <h1>
-            Analista de TI com experiência em Sustentação de Sistemas e Troubleshooting          </h1>
+  <section id="trajetoria" class="section">
 
-          <p class="lead">
-            Profissional de TI com experiência em sustentação de sistemas, análise de logs, monitoramento de ambientes e resolução de incidentes. Atuação com Linux, AWS e SQL, com foco em Análise de Sistemas e QA.
-          </p>
+    <h2>Minha Trajetória</h2>
 
-          <div class="hero__cta">
-            <a class="btn btn--primary" href="#projetos">Ver projetos</a>
-            <a class="btn btn--ghost" href="assets/docs/Curriculo-Mariane-Martins.pdf" target="_blank" rel="noreferrer">
-              Baixar currículo
-            </a>
-          </div>
+    <p class="subtitle">
+      Minha experiência em suporte e sustentação me proporcionou contato direto
+      com sistemas em produção, investigação de incidentes e resolução de
+      problemas — competências que hoje direcionam minha evolução para
+      Análise de Sistemas e Qualidade de Software.
+    </p>
 
-          <div class="hero__links">
-            <a class="link" href="https://www.linkedin.com/in/mariane-martins-948b1222b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">LinkedIn</a>
-            <span class="dot">•</span>
-            <a class="link" href="https://github.com/mariemartins03" target="_blank" rel="noreferrer">GitHub</a>
-            <span class="dot">•</span>
-            <a class="link" href="#contato">Contato</a>
-          </div>
-        </div>
+    <div class="journey">
 
-        <aside class="hero__card" aria-label="Resumo rápido">
-          <div class="profile">
-            <div class="profile__avatar">
-              <img
-                src="assets/img/mariane-martins.jpg"
-                alt="Mariane Martins"
-                style="width:100%; height:100%; object-fit:cover; border-radius:16px;"
-              >
-            </div>
-
-            <div>
-              <p class="profile__name">Mariane Martins</p>
-              <p class="profile__meta">Piraquara - PR • Presencial / Remoto / Híbrido</p>
-            </div>
-          </div>
-
-          <div class="quick">
-            <div class="quick__item">
-              <p class="quick__label">Foco</p>
-              <p class="quick__value">Suporte • Análise de Sistemas • QA</p>
-            </div>
-
-            <div class="quick__item">
-              <p class="quick__label">Stack</p>
-              <p class="quick__value">GLPI • Linux • Windows • SQL • MySQL • Troubleshooting • Documentação</p>
-            </div>
-
-            <div class="quick__item">
-              <p class="quick__label">Contato</p>
-              <p class="quick__value">
-                <a href="mailto:mariane.martins.ctt@gmail.com">mariane.martins.ctt@gmail.com</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="divider"></div>
-
-          <p class="small muted">
-            Portfólio voltado para vagas de suporte técnico, análise de sistemas e QA,
-            destacando experiência prática, projetos e evolução profissional.
-          </p>
-        </aside>
+      <div class="step">
+        <img src="assets/pixel/terminal.svg" alt="">
+        <h3>Suporte Técnico</h3>
+        <p>Diagnóstico, atendimento e resolução de problemas.</p>
       </div>
-    </section>
 
-    <!-- SOBRE -->
-    <section class="section section--alt" id="sobre">
-      <div class="container two-col">
-        <div>
-          <h2>Sobre</h2>
+      <div class="arrow">↓</div>
 
-          <p>
-            Sou profissional da área de tecnologia com experiência em sustentação e integração
-            de sistemas corporativos, monitoramento de ambientes, análise de logs,
-            troubleshooting de incidentes e suporte técnico avançado.
-          </p>
-
-          <p>
-            Tenho perfil analítico, organizado e colaborativo, com interesse em evoluir
-            para áreas mais próximas de Análise de Sistemas e QA.
-            Por isso, venho aprofundando meus conhecimentos em SQL, modelagem,
-            UML, testes de software e melhoria contínua de processos.
-          </p>
-
-          <div class="highlights">
-            <div class="highlight">
-              <p class="highlight__title">O que eu entrego</p>
-              <p class="muted">
-                Suporte técnico, análise de incidentes, documentação clara,
-                escalonamento com contexto e acompanhamento de demandas.
-              </p>
-            </div>
-
-            <div class="highlight">
-              <p class="highlight__title">Como eu trabalho</p>
-              <p class="muted">
-                Com organização, rastreabilidade, comunicação objetiva,
-                foco no cliente e melhoria contínua.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <aside class="panel">
-          <h3>Resumo</h3>
-          <ul class="info">
-            <li><span>Local:</span> Piraquara - PR</li>
-            <li><span>Objetivo:</span> Suporte • Análise de Sistemas • QA</li>
-            <li><span>Contato:</span> <a href="mailto:mariane.martins.ctt@gmail.com">mariane.martins.ctt@gmail.com</a></li>
-            <li><span>GitHub:</span> <a href="https://github.com/mariemartins03" target="_blank" rel="noreferrer">mariemartins03</a></li>
-            <li><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/mariane-martins-948b1222b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">Mariane Martins</a></li>
-          </ul>
-
-          <div class="divider"></div>
-
-          <p class="small muted">
-            Interesse em atuar de forma sólida em suporte técnico,
-            com evolução natural para análise de sistemas e qualidade de software.
-          </p>
-        </aside>
+      <div class="step">
+        <img src="assets/pixel/database.svg" alt="">
+        <h3>Sustentação de Sistemas</h3>
+        <p>Ambientes Linux, Docker, APIs, monitoramento e homologação.</p>
       </div>
-    </section>
 
-    <!-- EXPERIÊNCIA -->
-    <section class="section" id="experiencia">
-      <div class="container">
-        <div class="section__head">
-          <h2>Experiência</h2>
-          <p class="muted">Vivência prática com suporte, atendimento, troubleshooting e documentação.</p>
-        </div>
+      <div class="arrow">↓</div>
 
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__content">
-              <h3>Helper Tecnologia — Analista de TI</h3>
-              <p class="muted">set/2024 — atual</p>
-              <ul class="bullets">
-                <li>Sustentação e integração de sistemas corporativos garantindo disponibilidade e estabilidade dos ambientes.</li>
-                <li>Monitoramento e análise de logs em ambiente AWS para identificação e resolução de incidentes.</li>
-                <li>Investigação e troubleshooting de falhas sistêmicas atuando em conjunto com equipes internas e clientes.</li>
-                <li>Execução de testes e validações funcionais em atualizações e mudanças de ambiente.</li>
-                <li>Análise de indicadores operacionais e geração de relatórios de disponibilidade.</li>
-                <li>Suporte técnico avançado em sistemas de monitoramento, gravação e infraestrutura.</li>
-                <li>Apoio na homologação e implantação de novas funcionalidades e correções.</li>
-                <li>Documentação de procedimentos técnicos e análise de causa raiz.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__content">
-              <h3>Quality Digital — Técnico de Suporte N1/N2</h3>
-              <p class="muted">dez/2023 — set/2024</p>
-              <ul class="bullets">
-                <li>Atendimento técnico multicanal (telefone, e-mail, portal e acesso remoto).</li>
-                <li>Diagnóstico e resolução de problemas em sistemas, softwares, impressoras, redes e acessos.</li>
-                <li>Registro, triagem e acompanhamento de chamados com escalonamento conforme criticidade e SLA.</li>
-                <li>Administração do Active Directory realizando criação, bloqueio e exclusão de acessos.</li>
-                <li>Suporte remoto para usuários corporativos.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div class="two-col">
-          <div>
-            <h3>Formação</h3>
-            <p>
-              <strong>Tecnologia em Análise e Desenvolvimento de Sistemas</strong> —
-              Anhanguera (5º semestre - em andamento)
-            </p>
-            <p class="muted">Ensino Médio completo 2020</p>
-          </div>
-
-          <div>
-            <h3>Cursos</h3>
-            <ul class="bullets">
-              <li>Testes Automáticos + Curso Completo de Teste de Software — Concluído</li>
-              <li>UML — Guia Básico para Análise e Projeto de Sistemas — Concluído</li>
-              <li>Banco de Dados SQL do Zero ao Avançado</li>
-              <li>Preparatório AZ-900</li>
-              <li>Power BI — Cubos Academy</li>
-              <li>Analista de Suporte I e II / Manutenção de Computadores</li>
-            </ul>
-          </div>
-        </div>
+      <div class="step highlight">
+        <img src="assets/pixel/bug.svg" alt="">
+        <h3>Investigação & Troubleshooting</h3>
+        <p>Análise de logs, identificação de falhas e causa raiz.</p>
       </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section class="section section--alt" id="skills">
-      <div class="container">
-        <div class="section__head">
-          <h2>Skills</h2>
-          <p class="muted">Habilidades técnicas organizadas pelas áreas em que quero atuar.</p>
+      <div class="split">
+
+        <div class="target">
+          <img src="assets/pixel/robot.svg" alt="">
+          <h4>QA / Testes</h4>
+          <p>Casos de teste, reprodução de bugs, validações e retestes.</p>
         </div>
 
-        <div class="skills">
-          <div class="skill">
-            <p class="skill__name">Suporte e Troubleshooting</p>
-            <p class="muted">Atendimento N1/N2, diagnóstico de incidentes, triagem, escalonamento e acompanhamento de chamados.</p>
-          </div>
-
-          <div class="skill">
-            <p class="skill__name">Infraestrutura / ITSM</p>
-            <p class="muted">Windows, Linux, GLPI, Active Directory, redes básicas, suporte a servidores e organização de demandas.</p>
-          </div>
-
-          <div class="skill">
-            <p class="skill__name">SQL e Banco de Dados</p>
-            <p class="muted">SELECT, JOIN, GROUP BY, subqueries, views, procedures, MySQL e noções de PostgreSQL.</p>
-          </div>
-
-          <div class="skill">
-            <p class="skill__name">Análise de Sistemas</p>
-            <p class="muted">UML, modelagem relacional, análise de problemas, documentação técnica e visão de processos.</p>
-          </div>
-
-          <div class="skill">
-            <p class="skill__name">QA / Qualidade</p>
-            <p class="muted">Testes de software, validação funcional, registro de evidências, atenção a detalhes e apoio à melhoria contínua.</p>
-          </div>
-
-          <div class="skill">
-            <p class="skill__name">Ferramentas Complementares</p>
-            <p class="muted">Excel, Power BI e noções de Microsoft Azure para ampliar a visão analítica e técnica.</p>
-          </div>
+        <div class="target">
+          <img src="assets/pixel/computer.svg" alt="">
+          <h4>Análise de Sistemas</h4>
+          <p>Requisitos, documentação e entendimento de regras de negócio.</p>
         </div>
+
       </div>
-    </section>
 
-    <!-- PROJETOS -->
-    <section class="section" id="projetos">
-      <div class="container">
-        <div class="section__head">
-          <h2>Projetos</h2>
-          <p class="muted">Projetos e estudos práticos mais alinhados com suporte, sistemas e qualidade.</p>
-        </div>
-
-        <div class="filters" aria-label="Filtros de projetos">
-          <button class="chip is-active" data-filter="all">Todos</button>
-          <button class="chip" data-filter="suporte">Suporte</button>
-          <button class="chip" data-filter="sql">SQL</button>
-          <button class="chip" data-filter="sistemas">Análise de Sistemas</button>
-          <button class="chip" data-filter="qa">QA</button>
-          <button class="chip" data-filter="documentacao">Documentação</button>
-          <button class="chip" data-filter="python">Python</button>
-        </div>
-
-        <div class="grid" id="projectsGrid">
-
-          <!-- PROJETO PRINCIPAL -->
-          <article class="card project project--featured" data-tags="sistemas,qa,documentacao,python">
-            <div class="card__media">
-              <img
-                src="assets/img/project-doacoes.png"
-                alt="Sistema de Controle de Doações"
-                style="width:100%; height:100%; object-fit:cover;"
-              >
-            </div>
-
-            <div class="card__body">
-              <p class="project__label">Projeto principal</p>
-
-              <h3>Sistema de Controle de Doações</h3>
-
-              <p class="muted">
-                Sistema web desenvolvido em Python/Flask para controle de doações,
-                com autenticação, cadastro de registros, banco de dados SQLite,
-                documentação funcional, plano de testes e testes automatizados.
-              </p>
-
-              <ul class="bullets">
-                <li>Login administrativo com variáveis de ambiente</li>
-                <li>Cadastro e controle de doações</li>
-                <li>Banco de dados SQLite</li>
-                <li>Plano de testes funcional documentado</li>
-                <li>Testes automatizados com Pytest</li>
-                <li>Pipeline com GitHub Actions</li>
-              </ul>
-
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Flask</span>
-                <span class="tag">SQLite</span>
-                <span class="tag">QA</span>
-                <span class="tag">Pytest</span>
-                <span class="tag">Documentação</span>
-              </div>
-
-              <div class="card__actions">
-                <a
-                  class="btn btn--small btn--primary"
-                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ver no GitHub
-                </a>
-
-                <a
-                  class="btn btn--small btn--ghost btn--dark"
-                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio/tree/main/docs"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ver documentação
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- SUPORTE -->
-          <article class="card project" data-tags="suporte,documentacao">
-            <div class="card__media">
-              <img
-                src="assets/img/project-suporte.png"
-                alt="Fluxo de Atendimento e Troubleshooting em Suporte Técnico"
-                style="width:100%; height:100%; object-fit:cover;"
-              >
-            </div>
-
-            <div class="card__body">
-              <h3>Fluxo de Atendimento e Troubleshooting em Suporte Técnico</h3>
-              <p class="muted">
-                Estruturação de fluxo de atendimento para incidentes técnicos,
-                com triagem, análise inicial, registro, validação, escalonamento
-                e acompanhamento até resolução.
-              </p>
-
-              <ul class="bullets">
-                <li>Organização do processo de atendimento</li>
-                <li>Registro técnico e rastreabilidade</li>
-                <li>Escalonamento com contexto e evidências</li>
-                <li>Comunicação clara com usuário e equipes</li>
-              </ul>
-
-              <div class="tags">
-                <span class="tag">Suporte</span>
-                <span class="tag">Troubleshooting</span>
-                <span class="tag">Documentação</span>
-                <span class="tag">GLPI</span>
-              </div>
-
-              <div class="card__actions">
-                <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noreferrer">
-                  Ver detalhes
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- SQL -->
-          <article class="card project" data-tags="sql,sistemas">
-            <div class="card__media">
-              <img
-                src="assets/img/project-sql.png"
-                alt="Sistema Analítico de Concessionária"
-                style="width:100%; height:100%; object-fit:cover;"
-              >
-            </div>
-
-            <div class="card__body">
-              <h3>Sistema Analítico de Concessionária</h3>
-              <p class="muted">
-                Modelagem relacional e análise de vendas utilizando MySQL,
-                com foco em faturamento, ticket médio, performance por marca
-                e comportamento de clientes.
-              </p>
-
-              <ul class="bullets">
-                <li>Modelagem com chaves primárias e estrangeiras</li>
-                <li>Consultas com JOIN, GROUP BY e subqueries</li>
-                <li>Criação de VIEW para relatório consolidado</li>
-                <li>Stored Procedure parametrizada</li>
-              </ul>
-
-              <div class="tags">
-                <span class="tag">SQL</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">Modelagem</span>
-                <span class="tag">Análise</span>
-              </div>
-
-              <div class="card__actions">
-                <a
-                  class="btn btn--small btn--primary"
-                  href="https://github.com/mariemartins03/sql-analise-concessionaria"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ver no GitHub
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- UML DO SISTEMA DE DOAÇÕES -->
-          <article class="card project" data-tags="sistemas,documentacao,qa">
-            <div class="card__media">
-              <img
-                src="assets/img/project-uml.png"
-                alt="Diagramas UML do Sistema de Controle de Doações"
-                style="width:100%; height:100%; object-fit:cover;"
-              >
-            </div>
-
-            <div class="card__body">
-              <h3>Diagramas UML do Sistema de Doações</h3>
-
-              <p class="muted">
-                Documentação visual criada para o Sistema de Controle de Doações,
-                representando fluxos, atores, funcionalidades e estrutura do sistema.
-                Os diagramas apoiam a análise de requisitos, a comunicação técnica
-                e a validação das regras de negócio.
-              </p>
-
-              <ul class="bullets">
-                <li>Diagrama de casos de uso</li>
-                <li>Representação de atores e funcionalidades</li>
-                <li>Apoio à análise de requisitos</li>
-                <li>Documentação complementar do projeto principal</li>
-              </ul>
-
-              <div class="tags">
-                <span class="tag">UML</span>
-                <span class="tag">Análise de Sistemas</span>
-                <span class="tag">Documentação</span>
-                <span class="tag">Requisitos</span>
-              </div>
-
-              <div class="card__actions">
-                <a
-                  class="btn btn--small btn--primary"
-                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio/tree/main/Diagramas"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ver diagramas
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- CASOS DE TESTE DO SISTEMA DE DOAÇÕES -->
-          <article class="card project" data-tags="qa,documentacao,sistemas,python">
-            <div class="card__media">
-              <img
-                src="assets/img/project-qa.png"
-                alt="Casos de Teste do Sistema de Controle de Doações"
-                style="width:100%; height:100%; object-fit:cover;"
-              >
-            </div>
-
-            <div class="card__body">
-              <h3>Casos de Teste e Validação Funcional do Sistema de Doações</h3>
-
-              <p class="muted">
-                Planejamento e validação funcional do Sistema de Controle de Doações,
-                com foco em cenários de login, navegação, cadastro, regras de negócio,
-                comportamento esperado e registro de evidências.
-              </p>
-
-              <ul class="bullets">
-                <li>Plano de testes funcional documentado</li>
-                <li>Cenários de login e autenticação</li>
-                <li>Validação do fluxo de cadastro de doações</li>
-                <li>Testes automatizados com Pytest</li>
-                <li>Pipeline de validação com GitHub Actions</li>
-              </ul>
-
-              <div class="tags">
-                <span class="tag">QA</span>
-                <span class="tag">Teste Funcional</span>
-                <span class="tag">Pytest</span>
-                <span class="tag">GitHub Actions</span>
-                <span class="tag">Evidências</span>
-              </div>
-
-              <div class="card__actions">
-                <a
-                  class="btn btn--small btn--primary"
-                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio/tree/main/docs"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ver plano de testes
-                </a>
-
-                <a
-                  class="btn btn--small btn--ghost"
-                  href="https://github.com/mariemartins03/sistema_doacoes_portfolio/tree/main/tests"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ver testes
-                </a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section class="section section--alt" id="contato">
-      <div class="container two-col">
-        <div>
-          <h2>Contato</h2>
-          <p class="muted">
-            Aberta a oportunidades nas áreas de suporte técnico,
-            análise de sistemas e QA.
-          </p>
-
-          <div class="contact">
-            <a class="contact__item" href="mailto:mariane.martins.ctt@gmail.com">
-              <span class="contact__label">E-mail</span>
-              <span class="contact__value">mariane.martins.ctt@gmail.com</span>
-            </a>
-
-            <a class="contact__item" href="tel:+5541991427664">
-              <span class="contact__label">Telefone</span>
-              <span class="contact__value">(41) 99142-7664</span>
-            </a>
-
-            <a
-              class="contact__item"
-              href="https://www.linkedin.com/in/mariane-martins-948b1222b?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="contact__label">LinkedIn</span>
-              <span class="contact__value">Mariane Martins</span>
-            </a>
-
-            <a
-              class="contact__item"
-              href="https://github.com/mariemartins03"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="contact__label">GitHub</span>
-              <span class="contact__value">mariemartins03</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p class="small muted">© <span id="year"></span> Mariane Martins • Portfólio</p>
-      <a class="small link footer__top" href="#" id="backToTop">Voltar ao topo ↑</a>
     </div>
+
+  </section>
+
+  <!-- ================= CONEXÃO ================= -->
+
+  <section class="section compare">
+
+    <h2>Como minha experiência se conecta com QA</h2>
+
+    <div class="columns">
+
+      <div class="card">
+
+        <div class="card-header">
+          <img src="assets/pixel/database.svg" alt="">
+          <h3>Sustentação</h3>
+        </div>
+
+        <ul>
+          <li>Investigação de incidentes</li>
+          <li>Análise de logs</li>
+          <li>Troubleshooting</li>
+          <li>Monitoramento</li>
+          <li>Homologação</li>
+          <li>Documentação técnica</li>
+        </ul>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card-header">
+          <img src="assets/pixel/bug.svg" alt="">
+          <h3>QA & Sistemas</h3>
+        </div>
+
+        <ul>
+          <li>Identificação de defeitos</li>
+          <li>Reprodução de problemas</li>
+          <li>Casos de teste</li>
+          <li>Testes funcionais</li>
+          <li>Análise de requisitos</li>
+          <li>Evidências e retestes</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+
+  <section id="skills" class="section">
+
+    <h2>Competências</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <img src="assets/pixel/bug.svg" alt="">
+        <h3>Qualidade de Software</h3>
+        <p>Playwright, Postman, REST, HTTP, JSON, Testes Funcionais e Smoke Test.</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/pixel/database.svg" alt="">
+        <h3>Análise & Sustentação</h3>
+        <p>Linux, Docker, Logs, APIs, Homologação, Incidentes e Monitoramento.</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="assets/pixel/computer.svg" alt="">
+        <h3>Desenvolvimento</h3>
+        <p>Python, Flask, SQL, SQLite, Git, GitHub e JavaScript.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= PROJETOS ================= -->
+
+  <section id="projetos" class="section">
+
+    <h2>Projetos em Destaque</h2>
+
+    <article class="project featured">
+
+      <span class="tag">PROJETO PRINCIPAL</span>
+
+      <h3>Sistema de Gerenciamento de Doações</h3>
+
+      <p>
+        Aplicação desenvolvida para gerenciamento de doações com foco em
+        requisitos, modelagem de dados, desenvolvimento e testes.
+      </p>
+
+      <div class="flow">
+        <span>Requisitos</span>
+        <span>→</span>
+        <span>Desenvolvimento</span>
+        <span>→</span>
+        <span>Banco</span>
+        <span>→</span>
+        <span>Testes</span>
+      </div>
+
+      <div class="tech">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>SQLite</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+    </article>
+
+    <article class="project">
+
+      <span class="tag blue">QA</span>
+
+      <h3>QA — Sistema de Doações</h3>
+
+      <p>
+        Projeto dedicado ao planejamento de testes, cenários, bugs, retestes e
+        automação utilizando Pytest e Playwright.
+      </p>
+
+      <div class="tech">
+        <span>Pytest</span>
+        <span>Playwright</span>
+        <span>Smoke Test</span>
+        <span>Regressão</span>
+      </div>
+
+    </article>
+
+    <article class="project future">
+
+      <span class="tag yellow">EM BREVE</span>
+
+      <h3>Testes de API</h3>
+
+      <p>
+        Projeto futuro voltado para testes de APIs REST utilizando Postman,
+        Requests, Pytest e JSON.
+      </p>
+
+      <div class="tech">
+        <span>GET</span>
+        <span>POST</span>
+        <span>PUT</span>
+        <span>DELETE</span>
+      </div>
+
+    </article>
+
+    <article class="project">
+
+      <span class="tag green">AUTOMAÇÃO</span>
+
+      <h3>Network Camera Scanner</h3>
+
+      <p>
+        Ferramenta criada para automatizar a coleta e análise de informações de
+        câmeras e infraestrutura de rede, reduzindo atividades manuais.
+      </p>
+
+      <div class="tech">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>Requests</span>
+        <span>Automação</span>
+      </div>
+
+    </article>
+
+  </section>
+
+  <!-- ================= EXPERIÊNCIA ================= -->
+
+  <section id="experiencia" class="section">
+
+    <h2>Experiência Profissional</h2>
+
+    <div class="experience">
+
+      <div class="terminal-box">
+
+        <div class="terminal-title">
+          <img src="assets/pixel/terminal.svg" alt="">
+          <span>production_environment.log</span>
+        </div>
+
+        <ul>
+          <li>✔ Sustentação de sistemas em produção</li>
+          <li>✔ Investigação de incidentes</li>
+          <li>✔ Análise de logs</li>
+          <li>✔ Docker e Linux</li>
+          <li>✔ Validação de funcionalidades</li>
+          <li>✔ APIs REST</li>
+          <li>✔ AWS</li>
+          <li>✔ Documentação técnica</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= ESTUDOS ================= -->
+
+  <section class="section learning">
+
+    <h2>Status de Aprendizado</h2>
+
+    <p class="subtitle">
+      Representação visual das áreas em desenvolvimento contínuo.
+    </p>
+
+    <div class="progress">
+      <label>Análise de Sistemas</label>
+      <div><span style="width:85%"></span></div>
+    </div>
+
+    <div class="progress">
+      <label>QA</label>
+      <div><span style="width:80%"></span></div>
+    </div>
+
+    <div class="progress">
+      <label>Automação</label>
+      <div><span style="width:60%"></span></div>
+    </div>
+
+    <div class="progress">
+      <label>APIs</label>
+      <div><span style="width:65%"></span></div>
+    </div>
+
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+
+  <footer id="contato">
+
+    <img src="assets/pixel/computer.svg" alt="" class="footer-pixel">
+
+    <h2>Vamos conversar?</h2>
+
+    <p>
+      Estou sempre aberta a oportunidades para aprender, evoluir e contribuir
+      com soluções de tecnologia.
+    </p>
+
+    <div class="social">
+
+      <a href="https://github.com/mariemartins03" target="_blank">
+        GitHub
+      </a>
+
+      <a href="#">
+        LinkedIn
+      </a>
+
+      <a href="mailto:seuemail@email.com">
+        E-mail
+      </a>
+
+    </div>
+
+    <small>© 2026 • Mariane Martins</small>
+
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
